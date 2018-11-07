@@ -1,0 +1,504 @@
+html, body{
+	margin: 0px;
+	padding-top:2em;
+	height: 100%;
+}
+
+.navbar{
+	background-color: #181818;
+
+}
+#darkenbox{
+	width: 40%;
+	height: 30%;
+	text-align: center;
+	min-height:300px;
+	min-width:500px;
+	background: rgba(0, 0, 0, 0.3);
+	margin: auto;
+	text-align: center;
+	display: block;
+box-shadow: 0rem 0rem 1rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.row{
+	margin: 0px!important;
+
+}
+.footer{
+	background-color: #181818;
+margin-top: 7em;
+text-align: center;
+box-shadow: 1rem 0.5rem 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.card{
+	background-color: rgba(0, 0, 0, 0)!important;
+
+}
+#footer_work{
+	background-color: #181818;
+text-align: center;
+
+
+}
+.foot{
+padding-top: 2em;
+ letter-spacing: 2px;
+}
+ul{
+	padding-right: 3em;
+	margin-right: 5em;
+	text-align: center;
+
+}
+a{
+	color: white;
+}
+
+a:active{
+	color:white;
+	text-decoration: underline;
+}
+
+/* A little background color for works.html*/
+
+.bgwork{
+	background-color: #181815;
+	height: 100%;
+}
+
+/* Filtering buttons and their styling */
+
+.buttons{
+text-align: center;
+padding: 5%;
+
+}
+
+.btn-outline-info {
+	border-color: #32d6be;
+	    color: #32d6be;
+
+	margin: 5px;
+}
+
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #32d6be;
+    border-color: #32d6be;
+}
+
+/*index "see more" css*/
+#btn_see_more_index{
+    position:center;
+       display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2em;
+}
+#btn_see_more_index a{
+    color: #32d6be;
+}
+
+#btn_see_more_index:hover a{
+    color:white;
+}
+
+
+/* Index.html page styling and fix*/
+
+.container-fluid{
+background-image: url("../img/landing.png");
+height: 100%;
+    overflow-y: hidden;
+
+}
+
+/* Js typer to index.html */
+
+.typed_container{
+text-align: center;
+margin-top: 35%;
+}
+
+span{
+color:#32d6be;
+font-size: 25px;
+}
+p{
+	color: white;
+}
+.btn-contact{
+color: #32d6be;
+  background-color: transparent;
+  background-image: none;
+  border-color: #32d6be;
+}
+.btn-contact:hover {
+  color: #29292b;
+  background-color: #32d6be;
+  border-color: #32d6be;
+}
+
+.col-6 {
+	padding-top: 4em;
+	text-align: center;
+}
+
+
+/* Styling for navbar*/
+
+ li b {
+
+    display: none;
+
+}
+li a:hover {
+   
+    color: #32d6be!important;
+ 
+
+
+}
+li a:hover i {
+    display: none;
+     -webkit-transition:2s;
+    
+}
+li a:hover b {
+    display: block;
+    text-align: center;
+      -webkit-transition:10s;
+
+}
+
+.nav-link{
+	padding:0px;
+}
+.nav-item{
+	width: 100px;
+	margin:1em 0 1em 0;
+}
+
+
+/*animation durations for different elements in the navbar*/
+
+
+#home {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+}
+
+#work {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2.5s;
+
+}
+
+#skills {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+
+}
+
+#me {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+
+}
+
+#mail {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+
+}
+
+
+
+/*social icon color change*/
+.social{
+	height: 24px;
+	width: 24px;
+margin: 0em 1em 2em 1em;
+
+
+}
+.change{
+	-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}
+
+
+/* #myModal2 styling */
+
+#myModal2 {
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+}
+
+/* multiple modals title */
+
+.modal-title{
+	padding-top: 2em;
+}
+
+/* Contact form control */
+
+.form-control{
+	border-top:none; 
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+	border-bottom-width: 1px;
+border-left:none;
+border-right:none;
+border-radius: 0px;
+
+}
+.form-control:active{
+	border-style: none;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(50, 214, 190, 1);
+  box-shadow: none; -webkit-box-shadow: none inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+  
+}
+textarea{
+	width: 100%;
+	height: 100%;
+}
+
+/* contact form icons*/
+
+#inputicon1 i{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding:55px 9px 9px 35px;
+}
+#inputicon2 i{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding:95px 9px 9px 35px;
+}
+#inputicon3 i{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding:130px 9px 9px 35px;
+}
+
+#inputicon4 i{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding:165px 9px 9px 35px;
+}
+
+/* works modal styling for various html pages */
+
+#modalwork{
+	max-width: 50%;
+}
+.work_description{
+	color: black;
+}
+.work_description_icons{
+	width: 50px;
+}
+
+
+
+/*---------------*/
+/***** Ming *****/
+/*---------------*/
+
+figure.effect-ming {
+	background: #030c17;
+	margin-bottom: 0px!important;
+}
+
+figure.effect-ming img {
+	opacity: 1.5;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+margin-bottom: 0px!important;
+
+}
+
+figure.effect-ming figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom:30px;
+	left: 30px;
+	border: 2px solid #32d6be;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming h2 {
+	margin: 15% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-ming p {
+	
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-ming:hover h2 {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+	opacity: 0.4;
+
+}
+
+#grid {
+	position: relative;
+	clear: both;
+	list-style: none;
+	float: left;
+	overflow:hidden;
+	
+	text-align: center;
+	 -webkit-transition: all 6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 6s cubic-bezier(0.645, 0.045, 0.355, 1);		
+	}
+}
+
+/* Common style */
+
+
+
+#grid figure figcaption {
+
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#grid figure figcaption::before,
+#grid figure figcaption::after {
+	pointer-events: none;
+}
+
+#grid figure figcaption,
+#grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	 -webkit-transition: all 6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 6s cubic-bezier(0.645, 0.045, 0.355, 1);	
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+#grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+	color: #32d6be;
+}
+
+#grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+	color: #32d6be;
+	visibility:hidden;
+}
+#grid figure:hover h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+	color: #32d6be;
+	visibility:visible;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+
+	
+}
+
+
+#grid figure p {
+	letter-spacing: 1px;
+	font-size: 80%;
+	color: #32d6be;
+}
+
+.col-sm{
+	padding: 0em!important;
+	 max-width:33%!important;
+	 
+	}
+
+.text_styling{
+	float: left;
+	text-align: left;
+	padding-right:5em;
+	padding-left:5em;
+}
+
+#skills_styling{
+	margin-top: 50%;
+}
+
+a:hover{
+    color: rgba(0,0,0,0);
+    text-decoration: none;
+}
+.filter{
+    -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
