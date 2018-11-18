@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.css"/>
+  <link rel="stylesheet" href="../css/custom.css"/>
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="shortcut icon" type="image/png" href="../img/fav.png"/>
+<link rel="shortcut icon" type="image/png" href="http://img/fav.png"/>
+  	<title>Auris portfolio</title>
+
+
+<body style="background-color: #181815;">
+<nav class="navbar navbar-expand-md navbar-dark  shadow p-3 mb-5   fixed-top ">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse fadeInLeft" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item animated fadeInLeft" id="home">
+            <a class="nav-link " href="../index.html"><i class="material-icons">home</i><b>Home</b></a>
+          </li>
+          <li class="nav-item animated fadeInLeft" id="work">
+            <a  class="nav-link" href="works.html"><i class="material-icons">work</i><b>Work</b></a>
+          </li>
+          <li class="nav-item animated fadeInLeft" id="skills">
+            <a  class="nav-link" href="skills.html"><i class="material-icons">create</i><b>Skills</b></a>
+          </li>
+          <li class="nav-item animated fadeInLeft" id="me">
+            <a class="nav-link " href="me.html"><i class="material-icons">person_outline</i><b>About me</b></a>
+          </li>
+          <li class="nav-item animated fadeInLeft" id="mail">
+            <a data-toggle="modal" data-target="#myModal2" class="nav-link " href="#">
+            <i  class="material-icons">mail_outline</i><b>Contact</b></a>
+          </li>
+
+
+        </ul>
+        </div>
+    </nav>
+    <main style=" padding-top: 10%; height: 75%;">
+
+<div id="skills_styling" class=" row">
+      <div id="grid" class="col-sm" >
+      <h2 style="color: #32d6be;">Developing Skills</h2>
+      <br>
+      <p class="text_styling animated fadeIn">
+  Hello i am a Denmark (Copenhagen) based developer currently learning as a software engineer. Mainly specialising in front-end development.
+  HTML, CSS, JS (ES5, ES6), Jquery as well as using SaSS, LeSS while looking into Various application development tools like Angular, React.
+<br> <br>
+  I usually work as a full-stack developer mainly with anything i get thrown at me. CMS's like WordPress, Drupal and other environments are not unfamiliar to me as well as currently acquared knowledge of JAVA programming knowledge.
+
+  In addition to all these things Android and Node.js besides  database knowledge is also what i dabled with.
+<br> <br>
+
+Read about me by downloading my cv or if you want to contact me just push the buttons to contact me.
+
+</p>
+ </div>
+
+
+  <div id="grid" class="col-sm" >
+    <img  class="animated fadeIn" style="width:400px; border-radius:50%;" src="../img/Aurimas_Bogaciovas.jpg"><img>
+    <br>
+    <br>
+   <a class="animated fadeIn" href="../Digital-Workshop-Certification.pdf" ><img style="width:50px"  src="../img/certificate.png"><img></a>
+    <br>
+    <br>
+      <button  data-toggle="modal" data-target="#myModal2"  type="button" class="btn btn-contact animated fadeIn">Contact me</button>
+      <a href="../resume.pdf"  download><button  target="_blank"  type="button" class="btn btn-contact animated fadeIn" >Resume</button></a>
+ </div>
+
+
+  <div id="grid" class="col-sm" >
+   <h2 style="color: #32d6be;">Designing Skills</h2>
+<br>
+
+<p class="text_styling animated fadeIn">
+  Hello i am a Denmark (Copenhagen) based designer currently busy with using my skills for personal hobbies and small projects alike.
+  <br> <br>
+While developing my own little projects i use my design skills to add a little backbone to them and fancy appeal. I use most of the Adobe suite programs like Photoshop or Illustrator. I have dabbled in Sketch and other designing tools as well as having knowledge of more theoretical strategies.
+ <br> <br>
+Read about me by downloading my cv or just contact me directly  by contacting me via email.
+</p>
+
+ </div>
+ <div>
+</div>
+
+
+
+
+    </main>
+
+
+
+
+      <!--- Contact_modal-->
+
+<div  class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="me" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div  style="text-align: center; class="modal-header">
+        <h5  " class="modal-title" >Contact Me</h5>
+
+      </div>
+
+      <!-- Contact_form-->
+
+      <div class="modal-body">
+
+    <div class="row">
+      <div class="col-sm-12  ">
+        <form name="contact_form" method="post" action="../mail.php" class="p-5">
+
+<div id="inputicon1">
+    <i   class="material-icons">person_outline</i>
+            <input style="display: inline;" type="text"  class="form-control" placeholder="name" name="name">
+  </div>
+
+          <div id="inputicon2" >
+            <i  class="material-icons">mail_outline</i>
+            <input type="text"  class="form-control"  placeholder="email" name="email">
+
+          </div>
+
+          <div id="inputicon3">
+            <i class="material-icons">perm_device_information</i>
+            <input type="text"  class="form-control" placeholder="phone" name="phone">
+
+          </div>
+<br>
+          <div><textarea name="message" placeholder="Leave me a message!"></textarea></div>
+          <br>
+          <br>
+            <button type="submit"  name="submit" value="Submit" class="btn btn-secondary" >Send</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </form>
+      </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<div class="g-recaptcha"
+          data-sitekey="6LdIjmIUAAAAAMxJ_2BIuPo06AXXlX7hNTFNfTku"
+          data-callback="onSubmit"
+          data-size="invisible">
+    </div>
+  <footer class="footer">
+      <div class="container">
+       <p class="foot"> bogauris@gmail.com | (+45) 93 99 03 73 |  Copyright © Aurimas Bogaciovas, 2018 </p> <br>
+
+
+
+        <a href="https://www.linkedin.com/in/aurimas-boga%C4%8Diovas-46387999/" onmouseover="document.getElementById('in').src='../img/in_active.svg'" onmouseout="document.getElementById('in').src='../img/in.svg'">
+<img class="social" id="in"  alt="creativity" src="../img/in.svg"></a>
+
+       <a href="https://twitter.com/AurimasArt" onmouseover="document.getElementById('tw').src='../img/tw_active.svg'" onmouseout="document.getElementById('tw').src='../img/tw.svg'">
+<img class="social" id="tw"  alt="creativity" src="../img/tw.svg"></a>
+
+       <a href="https://www.instagram.com/aurisbog/" onmouseover="document.getElementById('insta').src='../img/insta_active.svg'" onmouseout="document.getElementById('insta').src='../img/insta.svg'">
+<img class="social" id="insta"  alt="creativity" src="../img/insta.svg"></a>
+       <a href="https://www.facebook.com/aurimas.bogaciovas" onmouseover="document.getElementById('fb').src='../img/fb_active.svg'" onmouseout="document.getElementById('fb').src='../img/fb.svg'">
+<img class="social" id="fb"  alt="creativity" src="../img/fb.svg"></a>
+
+<a href="https://github.com/AurisCode" onmouseover="document.getElementById('git').src='../img/git_active.svg'" onmouseout="document.getElementById('git').src='../img/git.svg'">
+<img class="social" id="git"  alt="creativity" src="../img/git.svg"></a>
+      </div>
+
+    </footer>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="../js/typed.js"></script>
+<script>$("#myModal1,#myModal2,#myModal3").on('show.bs.modal', function (e) {
+    var that=$(this);
+    var id=that.attr('id'); //get the id of button which got clicked
+    setTimeout(function(){
+        $('.modal-backdrop').attr('data-id',id);
+
+    });
+});</script>
+
+<script>
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            $('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+           $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+          $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+});
+</script>
+
+</script>
+</body>
+</html>
