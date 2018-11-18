@@ -13,9 +13,30 @@
    <link rel="shortcut icon" type="image/png" href="../img/fav.png"/>
 <link rel="shortcut icon" type="image/png" href="http://img/fav.png"/>
    	<!-- reCAPTCHA -->
-<script>
+<script
   src="https://code.jquery.com/jquery-2.2.4.js"
- </script>
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+  function onSubmit(token) {
+    alert('thanks ' + document.getElementById('name').value);
+  }
+
+  function validate(event) {
+    event.preventDefault();
+    if (!document.getElementById('name').value) {
+      alert("You must add text to the required field");
+    } else {
+      grecaptcha.execute();
+    }
+  }
+
+  function onload() {
+    var element = document.getElementById('submit');
+    element.onclick = validate;
+  }
+</script>
       
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
@@ -452,7 +473,11 @@ Tools used creating these images:
   
 
  
-
+<div class="g-recaptcha"
+          data-sitekey="6LdIjmIUAAAAAMxJ_2BIuPo06AXXlX7hNTFNfTku"
+          data-callback="onSubmit"
+          data-size="invisible">
+    </div>
   <footer class="footer">
       <div class="container">
        <p class="foot"> bogauris@gmail.com | (+45) 93 99 03 73 |  Copyright © Aurimas Bogaciovas, 2018 </p> <br>
