@@ -12,13 +12,47 @@
   <link rel="stylesheet" href="../css/animate.min.css">
    <link rel="shortcut icon" type="image/png" href="../img/fav.png"/>
 <link rel="shortcut icon" type="image/png" href="http://img/fav.png"/>
+   	<!-- reCAPTCHA -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+  function onSubmit(token) {
+    alert('thanks ' + document.getElementById('name').value);
+  }
 
+  function validate(event) {
+    event.preventDefault();
+    if (!document.getElementById('name').value) {
+      alert("You must add text to the required field");
+    } else {
+      grecaptcha.execute();
+    }
+  }
 
-	<title>Auris portfolio</title>
+  function onload() {
+    var element = document.getElementById('submit');
+    element.onclick = validate;
+  }
+</script>
+      
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-92934525-2');
+  gtag('config', 'GA_TRACKING_ID');
+  gtag('event', 'login', {'method': 'Google'});
+</script>
+  	<title>Auris portfolio</title>
 
 <body style="background-color: #181815;">
 <nav class="navbar navbar-expand-md navbar-dark  shadow p-3 mb-5   fixed-top ">
-
+      <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,8 +75,8 @@
             <a data-toggle="modal" data-target="#myModal20" class="nav-link " href="#">
             <i  class="material-icons">mail_outline</i><b>Contact</b></a>
           </li>
-
-
+            
+          
         </ul>
         </div>
     </nav>
@@ -57,51 +91,51 @@
       <div id="grid" class="col-sm  filter webdesign programming" >
 
       <div  class="card animated fadeIn each-item ">
-
-
-
-
+         
+  
+         
+             
                <figure data-toggle="modal" data-target="#myModal1" class="effect-ming">
              <img    class="card-img-top"  src="../img/blueview.jpg" alt="Card image cap">
             <figcaption>
               <h2>BlueView</h2>
               <p>A website model created for property. <br>Check it out!</p>
               <a  data-toggle="modal" data-target="#myModal1" href="">View more</a>
-            </figcaption>
+            </figcaption>     
           </figure>
 
     </div></div>
       <div id="grid" class="col-sm  filter webdesign programming" >
 
       <div  class="card animated fadeIn each-item ">
-
-
-
-
+         
+  
+         
+             
                <figure data-toggle="modal" data-target="#myModal2" class="effect-ming">
               <img data-toggle="modal" data-target="#myModal2" class="card-img-top" src="../img/portfolio1.jpg" alt="Card image cap">
             <figcaption>
               <h2>Previous Portfolio</h2>
               <p>A portfolio i created as my first showcase.<br> Check it out!</p>
               <a  data-toggle="modal" data-target="#myModal2" href="">View more</a>
-            </figcaption>
+            </figcaption>     
           </figure>
 
     </div></div>
     <div id="grid" class="col-sm  filter programming">
 
       <div  class="card animated fadeIn each-item ">
-
-
-
-
+         
+  
+         
+             
                <figure data-toggle="modal" data-target="#myModal3" class="effect-ming">
               <img data-toggle="modal" data-target="#myModal3" class="card-img-top" src="../img/app3.jpg" alt="Card image cap">
             <figcaption>
               <h2>Chating application</h2>
               <p>An android application i had a part in.<br> Check it out!</p>
               <a  data-toggle="modal" data-target="#myModal3" href="">View more</a>
-            </figcaption>
+            </figcaption>     
           </figure>
 
     </div>
@@ -109,17 +143,17 @@
    <div id="grid" class="col-sm  filter graphic" >
 
       <div  class="card animated fadeIn each-item">
-
-
-
-
+         
+  
+         
+             
                <figure data-toggle="modal" data-target="#myModal4" class="effect-ming">
              <img    class="card-img-top"  src="../img/1work.png" alt="Card image cap">
             <figcaption>
               <h2>Poligonical experiment</h2>
               <p>Poligon works i created <br>as part of experimenting with illustrations.<br><br> Check it out!</p>
               <a  data-toggle="modal" data-target="#myModal4" href="">View more</a>
-            </figcaption>
+            </figcaption>     
           </figure>
 
     </div></div>
@@ -127,7 +161,7 @@
 
 
 
-
+   
   </div>
 
 
@@ -180,7 +214,7 @@
          Website called Blueview was developed thanks to extensive use of bootstrap framework as well as Javascript and solid knowledge of design theories.
           Mentioned used tools will be mentioned at the end of this description.
 <br><br>
-Website was developed  while working at Property management company "Housing Group" as it should have served  their vision in creating new imagine and representation of vision in United States of America.
+Website was developed  while working at Property management company "Housing Group" as it should have served  their vision in creating new imagine and representation of vision in United States of America. 
 <br><br>
 
 Tools used creating this one page layout website:
@@ -193,7 +227,7 @@ Tools used creating this one page layout website:
 <img class="work_description_icons" src="../img/html.png">
 <img class="work_description_icons" src="../img/css.png">
         </p>
-
+       
       </div>
        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
@@ -256,13 +290,13 @@ Tools used creating this one page layout website:
 <img class="work_description_icons" src="../img/html.png">
 <img class="work_description_icons" src="../img/css.png">
         </p>
-
+       
       </div>
        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
   </div>
 </div>
-
+      
 
 <!--AAU APP-->
 
@@ -280,7 +314,7 @@ Tools used creating this one page layout website:
   <ol class="carousel-indicators">
     <li data-target="#3carousel" data-slide-to="0" class="active"></li>
     <li data-target="#3carousel" data-slide-to="1"></li>
-
+ 
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -303,7 +337,7 @@ Tools used creating this one page layout website:
       <div class="modal-footer">
         <p class="work_description">
         <br>
-This application which was developed during one of the studying semester periods helped me learn basics of Java and Android studio. Application supposed to serve as a theoretical and somewhat visual guide for the possible student/teacher communication improvement during studying time. As all other projects are possible to inspect this one can not be displayed publicly as the code is private and not wanted to be realeased. While in discussions the code may be viewed privately upon request.
+This application which was developed during one of the studying semester periods helped me learn basics of Java and Android studio. Application supposed to serve as a theoretical and somewhat visual guide for the possible student/teacher communication improvement during studying time. As all other projects are possible to inspect this one can not be displayed publicly as the code is private and not wanted to be realeased. While in discussions the code may be viewed privately upon request. 
 <br><br>
 Tools used creating this application:
 <img class="work_description_icons" src="../img/ps.jpg">
@@ -315,7 +349,7 @@ Tools used creating this application:
 <img class="work_description_icons" src="../img/fb.png">
 
         </p>
-
+       
       </div>
        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
@@ -339,7 +373,7 @@ Tools used creating this application:
     <li data-target="#4carousel" data-slide-to="0" class="active"></li>
        <li data-target="#4carousel" data-slide-to="1"</li>
     <li data-target="#4carousel" data-slide-to="2"></li>
-
+ 
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -365,7 +399,7 @@ Tools used creating this application:
       <div class="modal-footer">
         <p class="work_description">
         <br>
-These pieces of spesific art called "low-poly" translated as: low poligonical. Adding, editing and preparing the pictures for adapting them to low poligonical images creating an interesting image on the picture beforehand as what comes after creates an interesting picturesque image. By exploring the slider you can see how many images i experimented with and how they turned out.
+These pieces of spesific art called "low-poly" translated as: low poligonical. Adding, editing and preparing the pictures for adapting them to low poligonical images creating an interesting image on the picture beforehand as what comes after creates an interesting picturesque image. By exploring the slider you can see how many images i experimented with and how they turned out. 
 <br><br>
 Tools used creating these images:
 <img class="work_description_icons" src="../img/ps.jpg">
@@ -373,7 +407,7 @@ Tools used creating these images:
 
 
         </p>
-
+       
       </div>
        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
@@ -385,19 +419,19 @@ Tools used creating these images:
 <div  class="modal fade" id="myModal20" tabindex="-1" role="dialog" aria-labelledby="me" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div  style="text-align: center; class="modal-header">
+      <div  style="text-align: center; class="modal-header"> 
         <h5  " class="modal-title" >Contact Me</h5>
-
+       
       </div>
 
       <!-- Contact_form-->
 
       <div class="modal-body">
-
+         
     <div class="row">
       <div class="col-sm-12  ">
         <form name="contact_form" method="post" action="../mail.php" class="p-5">
-
+        
 <div id="inputicon1">
     <i   class="material-icons">person_outline</i>
             <input style="display: inline;" type="text"  class="form-control" placeholder="name" name="name">
@@ -406,13 +440,13 @@ Tools used creating these images:
           <div id="inputicon2" >
             <i  class="material-icons">mail_outline</i>
             <input type="text"  class="form-control"  placeholder="email" name="email">
-
+            
           </div>
 
           <div id="inputicon3">
             <i class="material-icons">perm_device_information</i>
             <input type="text"  class="form-control" placeholder="phone" name="phone">
-
+            
           </div>
 <br>
           <div><textarea name="message" placeholder="Leave me a message!"></textarea></div>
@@ -422,23 +456,28 @@ Tools used creating these images:
              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </form>
       </div>
-
+     
 
       </div>
 
       <div class="modal-footer">
-
+      
       </div>
 
     </div>
   </div>
-
+ 
 </div>
 </div>
 
+  
 
-
-
+ 
+<div class="g-recaptcha"
+          data-sitekey="6LdIjmIUAAAAAMxJ_2BIuPo06AXXlX7hNTFNfTku"
+          data-callback="onSubmit"
+          data-size="invisible">
+    </div>
   <footer class="footer">
       <div class="container">
        <p class="foot"> bogauris@gmail.com | (+45) 93 99 03 73 |  Copyright © Aurimas Bogaciovas, 2018 </p> <br>
@@ -472,7 +511,7 @@ Tools used creating these images:
     var id=that.attr('id'); //get the id of button which got clicked
     setTimeout(function(){
         $('.modal-backdrop').attr('data-id',id);
-
+        
     });
 });</script>
 
@@ -483,7 +522,7 @@ $(document).ready(function(){
 
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
-
+        
         if(value == "all")
         {
             $('.filter').removeClass('hidden');
@@ -495,7 +534,7 @@ $(document).ready(function(){
           $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
             $(".filter").not('.'+value).hide('300');
             $('.filter').filter('.'+value).show('300');
-
+            
         }
     });
 
@@ -503,3 +542,4 @@ $(document).ready(function(){
 </script>
 </body>
 </html>
+
